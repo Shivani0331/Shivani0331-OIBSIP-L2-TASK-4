@@ -14,7 +14,7 @@ A simple web-based login authentication system that allows users to **register**
 
 - **HTML** – Page structure
 - **CSS** – Styling and layout
-- **JavaScript** – Authentication logic (or Python/Java if applicable)
+- **JavaScript** – Authentication logic
 
 
 
