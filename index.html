@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <button id="themeToggle" class="theme-btn">🌙</button>
+
+  <div class="container">
+    <h2>Register</h2>
+
+    <div class="input-group">
+      <label>Username</label>
+      <input type="text" id="regUsername" required />
+    </div>
+
+    <div class="input-group">
+      <label>Password</label>
+      <div class="password-box">
+        <input type="password" id="regPassword" required />
+        <span class="toggle-pass" onclick="togglePassword('regPassword', this)">👁</span>
+      </div>
+      <div class="strength" id="strength">Password strength: </div>
+    </div>
+
+    <div class="input-group">
+      <label>Profile Avatar (optional)</label>
+      <input type="file" id="regAvatar" accept="image/*" />
+      <div class="avatar-preview-wrap">
+        <img id="avatarPreview" class="avatar-preview" alt="Preview" />
+      </div>
+    </div>
+
+    <button class="btn" onclick="register()">Register</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <div id="notification"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

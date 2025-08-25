@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secured Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <button id="themeToggle" class="theme-btn">🌙</button>
+
+  <div class="container">
+    <h2>Welcome 🔐</h2>
+
+    <div class="profile-box">
+      <img id="avatarImg" class="avatar" alt="Avatar" style="display:none"/>
+      <div id="avatarCircle" class="avatar-circle" style="display:none"></div>
+      <p id="welcomeMsg"></p>
+    </div>
+
+    <button class="btn" onclick="logout()">Logout</button>
+  </div>
+
+  <div id="notification"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

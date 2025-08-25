@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <button id="themeToggle" class="theme-btn">🌙</button>
+
+  <div class="container">
+    <h2>Login</h2>
+
+    <div class="input-group">
+      <label>Username</label>
+      <input type="text" id="loginUsername" required />
+    </div>
+
+    <div class="input-group">
+      <label>Password</label>
+      <div class="password-box">
+        <input type="password" id="loginPassword" required />
+        <span class="toggle-pass" onclick="togglePassword('loginPassword', this)">👁</span>
+      </div>
+    </div>
+
+    <button class="btn" onclick="login()">Login</button>
+    <p>Don’t have an account? <a href="index.html">Register</a></p>
+  </div>
+
+  <div id="notification"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
